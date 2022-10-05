@@ -2,12 +2,8 @@ package services;
 
 import enums.OperationType;
 import enums.Singleton;
-import model.Item;
 import model.Pawn;
 import model.Product;
-
-import java.util.List;
-import java.util.Scanner;
 
 public class ProductOperations implements Operations {
 

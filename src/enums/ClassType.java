@@ -1,8 +1,5 @@
 package enums;
 
-import model.Customer;
-import model.Item;
-import model.Product;
 import services.CustomerOperations;
 import services.Operations;
 import services.PawnOperations;
@@ -12,27 +9,27 @@ public enum ClassType {
     CUSTOMER(1), PAWN(2), PRODUCT(3);
     int id;
 
-    Item item;
+    Operations operations;
 
-    public Item getItem() {
-        return item;
+    public Operations getOperations() {
+        return operations;
     }
 
-    public void setItem(Item item) {
-        this.item = item;
+    public void setOperations(Operations operations) {
+        this.operations = operations;
     }
 
     ClassType(int id) {
         this.id = id;
         if (id == 1){
             Operations operations = new CustomerOperations();
-            setItem(new Item<>(operations));
+            setOperations(operations);
         }else if (id == 2){
             Operations operations = new PawnOperations();
-            setItem(new Item<>(operations));
+            setOperations(operations);
         } else if (id == 3) {
             Operations operations = new ProductOperations();
-            setItem(new Item<>(operations));
+            setOperations(operations);
         }
 
     }

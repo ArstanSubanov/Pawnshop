@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86211014-4f6b-4f5e-b183-4babf83d6536" name="Changes" comment="Save">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="86211014-4f6b-4f5e-b183-4babf83d6536" name="Changes" comment="Delete unused class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/ClassType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/ClassType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664628164416</updated>
     </task>
+    <task id="LOCAL-00001" summary="Delete unused class">
+      <created>1664902683146</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664902683146</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Save" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save" />
+    <MESSAGE value="Delete unused class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused class" />
   </component>
 </project>

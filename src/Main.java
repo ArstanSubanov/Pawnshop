@@ -13,14 +13,18 @@ public class Main {
             ClassType.showClassType();
             System.out.println("Pls choose your object type id: ");
             id = Singleton.scanner.nextInt();
-            Operations operations = (Operations) ClassType.getClassType(id).getItem().getElement();
+            Operations operations = ClassType.getClassType(id).getOperations();
             OperationType.showOperation();
             System.out.println("Choose your operation type id: ");
             id = Singleton.scanner.nextInt();
             OperationType operationType = OperationType.getOperationType(id);
-            System.out.println("Insert pls id: ");
-            id = Singleton.scanner.nextInt();
-            operations.execute(operationType, id);
+            if (operationType==OperationType.GET_ALL){
+                operations.execute(operationType, 0);
+            }else {
+                System.out.println("Insert pls id: ");
+                id = Singleton.scanner.nextInt();
+                operations.execute(operationType, id);
+            }
 
             System.out.println("Do you wanna end? y/n");
             String status = Singleton.scanner.next();
